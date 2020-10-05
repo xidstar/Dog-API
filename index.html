@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Dog API</title>
+</head>
+
+<body class="dog-app">
+  <div class="container">
+    <div class="row row-header">
+      <div class="col-xs-12 justify-content-centered">
+        <h1>Dog Selector App</h1>
+      </div>
+    </div>
+    
+    <div class="row row-body">
+      <div class="col-xs-12 col-sm-6 col-img text-center">
+        <h2 class="breed-name"></h2>
+        <div id="breed-grid" class="dog-img">
+          <!-- <img src="./images.png" alt=""> -->
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-btn text-center">
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Select Dog Breed
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <!-- <a class="dropdown-item" href="#">Cogi</a> -->
+          </div>
+        </div>
+        <button type="button" class="btn btn-success remove">Clear</button>
+      </div>
+    </div>
+
+  </div>
+  
+  <script src="js/app.js"></script>
+  <script src="js/api.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>

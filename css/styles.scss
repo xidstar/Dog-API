@@ -1,0 +1,86 @@
+.dog-app {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+
+  .container {
+    max-width: 800px;
+    width: 80%;
+    border: 2px solid #aaa;
+    border-radius: 4px;
+    box-shadow: 10px 10px 5px #ccc;
+
+    .row {
+      &.row-header {
+        background: #000;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+
+        h1 {
+          padding: 20px;
+
+          @media(max-width: 576px) {
+            font-size: 22px;
+          }
+        }
+      }
+
+      &.row-body {
+        .col-img {
+          padding: 20px;
+
+          h2 {
+            @media(max-width: 576px) {
+              font-size: 20px;
+            }
+          }
+          .dog-img {
+            display: none;
+            img {
+              max-width: 250px;
+              width: 100%;
+              height: auto;
+              margin: 0 auto;
+            }
+          }
+          
+        }
+
+        .col-btn {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          border-left: 2px solid #aaa;
+
+          @media(max-width: 576px) {
+            border-left: none;
+            border-top: 2px solid #aaa;
+          }
+
+          .dropdown-menu.show {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            will-change: transform;
+            max-height: 150px;
+            overflow-y: scroll;
+            transform: translate3d(20px, 58px, 0px);
+          }
+
+          .btn {
+            margin: 20px;
+          }
+        }
+      }
+
+    }
+  }
+}
